@@ -1,4 +1,4 @@
-import requests, json, os,time, platform
+﻿import requests, json, os,time, platform
 try:import colorama
 except ImportError:os.system("pip install colorama");import colorama
 colorama.init()
@@ -35,15 +35,15 @@ while True:
             time.sleep(0.5)
             printlogo()
             for i in range(len(jsn)):
-                try:
+                #try:
                     if str(type(jsn[i])) == "<class 'dict'>":
                         try:spisok.append(jsn[i]['name'])
                         except:pass
                         l=1
-                except:print(colorama.Fore.RED + "Не так быстро скачивайте, гитхаб это не разрешает");pause();printlogo();break;l=0
-            try:
-                if l == 0:print(colorama.Fore.RED + "Не так быстро скачивайте, гитхаб это не разрешает");pause();printlogo();break
-            except:l=0
+                #except:print(colorama.Fore.RED + "Не так быстро скачивайте, гитхаб это не разрешает");pause();printlogo();break;l=0
+            #try:
+             #   if l == 0:print(colorama.Fore.RED + "Не так быстро скачивайте, гитхаб это не разрешает");pause();printlogo();break
+            #except:l=0
             print(colorama.Fore.GREEN + f"Начинаю скачивать репозитории {n}")
             time.sleep(0.5)
             printlogo()
